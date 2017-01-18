@@ -30,11 +30,20 @@ $(function() {
   
   $('.ability-names').append($('<li/>').html(pokemon.abilities[0].name))
   
-  $('ability-name').append(pokemon.abilities[1].name)
+ $('.ability-names').append($('<li/>').html(pokemon.abilities[1].name))
+  
   
   // TODO: Add egg group names here to a <ul> that you created
+  
+  
 
   // TODO: Add move names in alphabetical order here to the existing <ul>
+  
+  for(var i=0; i<squirtle.moves.length; i=i+1) {
+  console.log(squirtle.moves[i].name);
+  }
+  
+  
   // TODO: Add ONLY level up move names to the <ul> you created
 
   // Now... take a deep breath and go back to your move lists.
