@@ -15,18 +15,22 @@ $(function() {
   $(".pokemon-evolves").append(pokemon.evolutions[0].to);
   $(".pokemon-ev-level").append("Evolves at level:") 
   // TODO: Add evolution level here
-  $(".pokemon-ev-level").append("16"); 
+  $(".pokemon-ev-level").append(pokemon.evolutions[0].level); 
   
   // TODO: Add speed here
-  $(".pokemon-spd").append("43") ;
+  $(".pokemon-spd").append(pokemon.speed) ;
   
   // TODO: Add attack here
-   $(".pokemon-atk").append("48");
+   $(".pokemon-atk").append(pokemon.attack);
   
   // TODO: Add defense here
-  $(".pokemon-def").append("65");
+  $(".pokemon-def").append(pokemon.defense);
   
   // TODO: Add ability names here to the <ul> with class .ability-names
+  
+  $('.ability-names').append($('<li/>').html(pokemon.abilities[0].name))
+  
+  $('ability-name').append(pokemon.abilities[1].name)
   
   // TODO: Add egg group names here to a <ul> that you created
 

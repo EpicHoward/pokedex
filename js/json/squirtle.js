@@ -136,7 +136,8 @@ var squirtle = {
     name: "Brine",
     resource_uri: "/api/v1/move/362/"
   }, {
-    learn_type: "machine",
+
+  learn_type: "machine",
     name: "Gyro-ball",
     resource_uri: "/api/v1/move/360/"
   }, {
